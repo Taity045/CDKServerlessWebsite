@@ -2,10 +2,11 @@ from aws_cdk import (
     core,
     aws_lambda,
     aws_dynamodb,
+    aws_s3 as s3,
 )
 
 
-class ServerlessSite(core.Stack):
+class ServerlessStack(core.Stack):
 
     def __init__(self, scope: core.Construct, id: str, **kwargs) -> None:
         super().__init__(scope, id, **kwargs)
@@ -19,6 +20,9 @@ class ServerlessSite(core.Stack):
             )
         )
 
+        #Create S3 Bucket
+        s3 = _s3.Bucket(self, "s3bucket")
+
 app = core.App()
-ServerlessSite(app, "website")
+ServerlessStack(app, "website")
 app.synth()        

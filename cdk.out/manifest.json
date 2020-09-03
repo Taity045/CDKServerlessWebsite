@@ -19,7 +19,7 @@
             "type": "aws:cdk:logicalId",
             "data": "mappingtable52FDC76D",
             "trace": [
-              "new Table (/tmp/jsii-kernel-rAhXFN/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:305:22)",
+              "new Table (/tmp/jsii-kernel-Dc2UL2/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:305:22)",
               "/home/linuxbrew/.linuxbrew/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7932:49",
               "Kernel._wrapSandboxCode (/home/linuxbrew/.linuxbrew/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8417:20)",
               "Kernel._create (/home/linuxbrew/.linuxbrew/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7932:26)",
