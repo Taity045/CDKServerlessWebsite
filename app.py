@@ -2,7 +2,7 @@ from aws_cdk import (
     core,
     aws_lambda,
     aws_dynamodb,
-    aws_s3 as s3,
+    aws_s3 as _s3,
 )
 
 
@@ -20,8 +20,9 @@ class ServerlessStack(core.Stack):
             )
         )
 
-        #Create S3 Bucket
+        # create s3 bucket
         s3 = _s3.Bucket(self, "s3bucket")
+       
 
 app = core.App()
 ServerlessStack(app, "website")
