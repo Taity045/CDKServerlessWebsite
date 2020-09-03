@@ -1,0 +1,66 @@
+{
+  "version": "5.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "website": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "website.template.json"
+      },
+      "metadata": {
+        "/website/mapping_table/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mappingtable52FDC76D",
+            "trace": [
+              "new Table (/tmp/jsii-kernel-rAhXFN/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:305:22)",
+              "/home/linuxbrew/.linuxbrew/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7932:49",
+              "Kernel._wrapSandboxCode (/home/linuxbrew/.linuxbrew/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8417:20)",
+              "Kernel._create (/home/linuxbrew/.linuxbrew/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7932:26)",
+              "Kernel.create (/home/linuxbrew/.linuxbrew/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7676:21)",
+              "KernelHost.processRequest (/home/linuxbrew/.linuxbrew/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7456:28)",
+              "KernelHost.run (/home/linuxbrew/.linuxbrew/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7394:14)",
+              "Immediate._onImmediate (/home/linuxbrew/.linuxbrew/lib/python3.8/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7397:37)",
+              "processImmediate (internal/timers.js:461:21)"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/cloud-assembly-schema": "1.61.1",
+      "@aws-cdk/cx-api": "1.61.1",
+      "@aws-cdk/core": "1.61.1",
+      "@aws-cdk/region-info": "1.61.1",
+      "@aws-cdk/aws-iam": "1.61.1",
+      "@aws-cdk/aws-autoscaling-common": "1.61.1",
+      "@aws-cdk/aws-cloudwatch": "1.61.1",
+      "@aws-cdk/aws-applicationautoscaling": "1.61.1",
+      "@aws-cdk/aws-codeguruprofiler": "1.61.1",
+      "@aws-cdk/assets": "1.61.1",
+      "@aws-cdk/aws-kms": "1.61.1",
+      "@aws-cdk/aws-events": "1.61.1",
+      "@aws-cdk/aws-s3": "1.61.1",
+      "@aws-cdk/aws-s3-assets": "1.61.1",
+      "@aws-cdk/aws-logs": "1.61.1",
+      "@aws-cdk/aws-ssm": "1.61.1",
+      "@aws-cdk/aws-ec2": "1.61.1",
+      "@aws-cdk/aws-efs": "1.61.1",
+      "@aws-cdk/aws-sqs": "1.61.1",
+      "@aws-cdk/aws-lambda": "1.61.1",
+      "@aws-cdk/aws-sns": "1.61.1",
+      "@aws-cdk/aws-cloudformation": "1.61.1",
+      "@aws-cdk/custom-resources": "1.61.1",
+      "@aws-cdk/aws-dynamodb": "1.61.1",
+      "jsii-runtime": "Python/3.8.5"
+    }
+  }
+}

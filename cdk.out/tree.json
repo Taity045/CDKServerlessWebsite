@@ -1,0 +1,54 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": {
+      "Tree": {
+        "id": "Tree",
+        "path": "Tree"
+      },
+      "website": {
+        "id": "website",
+        "path": "website",
+        "children": {
+          "mapping_table": {
+            "id": "mapping_table",
+            "path": "website/mapping_table",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "website/mapping_table/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::DynamoDB::Table",
+                  "aws:cdk:cloudformation:props": {
+                    "keySchema": [
+                      {
+                        "attributeName": "id",
+                        "keyType": "HASH"
+                      }
+                    ],
+                    "attributeDefinitions": [
+                      {
+                        "attributeName": "id",
+                        "attributeType": "S"
+                      }
+                    ],
+                    "provisionedThroughput": {
+                      "readCapacityUnits": 5,
+                      "writeCapacityUnits": 5
+                    }
+                  }
+                }
+              },
+              "ScalingRole": {
+                "id": "ScalingRole",
+                "path": "website/mapping_table/ScalingRole"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
