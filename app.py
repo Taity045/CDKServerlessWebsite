@@ -23,19 +23,19 @@ class ServerlessStack(core.Stack):
         # create s3 bucket
         s3 = _s3.Bucket(self, "s3bucket")
 
-        apigw.LambdaRestApi(
-            self, 'Endpoint',
-            handler=fx,)
+#       apigw.LambdaRestApi(
+#             self, 'Endpoint',
+#             handler=fx,)
 
        
         fx = _lambda_function(
             self, 'lambda_function',
             runtime=_lambda.Runtime.PYTHON_3_8,
             code=_lambda.Code.asset('lambda'),
-            handler='main.handler',    
+            handler='main.handler')   
 
        
 
 app = core.App()
-ServerlessStack(app, "website")
+ServerlessStack(app,"website")
 app.synth()        
