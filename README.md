@@ -14,7 +14,7 @@ It is serverless, the backend utilizies AWS DynamoDB and Lambda, which communica
 
 The domain for the static site (i.e. mystaticsite.com) must be configured as a hosted zone in Route53 prior to deploying this example.  For instructions on configuring Route53 as the DNS service for your domain, see the [Route53 documentation](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-configuring.html).
 
-# DEPLOYMENT MIGHT NOT WORK OUT OF THE BOX, MINOR CONFIG CHANGES MIGHT NEED TO BE MADE FIRST!!!
+## DEPLOYMENT MIGHT NOT WORK OUT OF THE BOX, MINOR CONFIG CHANGES MIGHT NEED TO BE MADE FIRST!!!
 
 ## Deploy
 
